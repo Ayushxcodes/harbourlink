@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Merriweather } from 'next/font/google'
 import "./globals.css";
+const merriweather = Merriweather({
+    subsets: ['latin'],
+    weight: ['400', '700'], // Choose the weights you want
+    display: 'swap',
+  })
 
-const inter = Inter({
-    variable: "--font-inter",
-    subsets: ["latin"],
-    display: "swap",
-    axes: ["opsz"],
-});
 
 export const metadata: Metadata = {
     title: "Harbour-Link",
@@ -25,7 +24,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} font-sans antialiased bg-white-950 text-black`}
+                className={`${merriweather} font-sans antialiased bg-white-950 text-black`}
             >
                 {children}
             </body>

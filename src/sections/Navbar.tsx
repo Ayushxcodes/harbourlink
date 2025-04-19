@@ -11,7 +11,9 @@ import { AnimatePresence,motion} from "framer-motion";
 const navLinks = [
   { label: "Home", href: "#Home" },
   { label: "About", href: "#Introduction" },
+  { label: "Merits", href: "#Merits" },
   { label: "Services", href: "#Services" },
+  { label: "Reports", href: "#Report" },
   { label: "FAQs", href: "#Faqs" },
   { label: "Contact", href: "#Footer" },
 ];
@@ -30,7 +32,7 @@ export default function Navbar() {
             <Text className="text-xl font-semibold">HarborLink</Text> {/* Add text styling */}
           </div>
           <div className=" lg:flex flex justify-center items-center hidden">
-            <nav className="flex gap-6 font-medium">
+            <nav className="flex gap-5 font-medium">
                 {navLinks.map((link) =>(
                     <a href={link.href} key={link.label}>
                         {link.label}
@@ -56,8 +58,8 @@ export default function Navbar() {
   <line x1="3" y1="12" x2="21" y2="12" className={twMerge("transition",isOpen && 'opacity-0')}></line>
   <line x1="3" y1="18" x2="21" y2="18" className={twMerge("origin-left transition",isOpen && '-rotate-45 translate-y-1')}></line>
 </svg>
-            <Button variant="secondary" className="hidden md:inline-flex items-center">Log In</Button>
-            <Button variant="primary" className="hidden md:inline-flex items-center">Sign Up</Button>
+
+            <Button variant="primary" className="hidden md:inline-flex items-center">Contact Us</Button>
           </div>
         </div>
         <AnimatePresence>

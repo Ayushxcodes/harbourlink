@@ -9,11 +9,14 @@ import Avatar from "@/components/Avatar";
 import Key from "@/components/Key";
 
 const features = [
-  "General environment tracking",
-  "Predictive maintenance systems",
-  "Operational monitoring ",
   "AI logistics",
+  "Predictive maintenance solutions",
+  "General environment tracking",
   "Crew management",
+  "Operational monitoring",
+  "Streamline user interaction",
+  "Data-driven waste management systems",
+  "Digital procurement ecosystems"
 ];
 
 export default function Features() {
