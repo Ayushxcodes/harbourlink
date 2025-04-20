@@ -2,7 +2,7 @@ import Tag from "@/components/Tag";
 import FeatureCard from "@/components/FeatureCard";
 
 // ✅ Define the type locally
-type Integration = {
+export type Integration = {
   name: string;
   description: string;
 };
