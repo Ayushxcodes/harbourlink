@@ -2,7 +2,7 @@ import madeImage from '@/assets/images/imagelogo.jpg';
 import Image from 'next/image';
 
 const footerLinks = [
-  { href: "#", label: "Contact" },
+  { href: "#", label: "+919958278620" },
   { href: "#", label: "Privacy Policy" },
   { href: "#", label: "Terms & Conditions" },
 ];
