@@ -1,9 +1,14 @@
 import Tag from "@/components/Tag";
-import FeatureCard from "@/components/FeatureCard"; // Assuming FeatureCard is already created
-import { IntegrationsType } from "@/sections/Integrations";
+import FeatureCard from "@/components/FeatureCard";
 
-// Sample data (you already have this)
-const integrations: IntegrationsType = [
+// ✅ Define the type locally
+type Integration = {
+  name: string;
+  description: string;
+};
+
+// ✅ Use the type here
+const integrations: Integration[] = [
   {
     name: "Ventakesh D. Raju",
     description:

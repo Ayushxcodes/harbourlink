@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 // Static imports
-import image1 from "@/assets/images/imag1.png";
 import image2 from "@/assets/images/imag2.png";
 import image3 from "@/assets/images/imag3.png";
 import image4 from "@/assets/images/imag4.png";
@@ -19,7 +18,6 @@ export default function CallToAction() {
     const [scope, animate] = useAnimate();
 
     const images = [
-        image1,
         image2,
         image3,
         image4,
