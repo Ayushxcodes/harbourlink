@@ -1,4 +1,4 @@
-import logoImage from '@/assets/images/logo.png';
+import madeImage from '@/assets/images/imagelogo.jpg';
 import Image from 'next/image';
 
 const footerLinks = [
@@ -14,7 +14,13 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
           {/* Logo Section */}
           <div className="flex-shrink-0">
-            <Image src={logoImage} alt="Harbour Link" className="h-20 w-auto" />
+            <Image
+              src={madeImage}
+              alt="Harbour Link"
+              width={180} // Increased width
+              height={60} // Adjusted height for aspect ratio
+              className="w-auto h-auto"
+            />
           </div>
 
           {/* Links and Address Section */}
