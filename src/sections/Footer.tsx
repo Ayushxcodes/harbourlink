@@ -5,6 +5,7 @@ const footerLinks = [
   { href: "#", label: "+919958278620" },
   { href: "#", label: "Privacy Policy" },
   { href: "#", label: "Terms & Conditions" },
+  { href: "#", label: "info@harborlinkglobal.in" },
 ];
 
 export default function Footer() {
