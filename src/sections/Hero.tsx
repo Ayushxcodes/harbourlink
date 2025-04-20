@@ -25,11 +25,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-6xl font-medium text-center mt-6 text-white">
+        <h1 className="text-6xl md:text-6xl font-medium text-center mt-3 text-white">
           AI-Powered Insights
         </h1>
 
-        <h2 className="text-center text-6xl text-white/90 mt-9 max-w-4xl mx-auto">
+        <h2 className="text-center text-6xl text-white/90 mt-4 max-w-4xl mx-auto">
           Deriving The Green Shipping Era
           </h2>
 

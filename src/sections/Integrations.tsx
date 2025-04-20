@@ -1,7 +1,4 @@
 import Tag from "@/components/Tag";
-import figmaIcon from '@/assets/images/figma-logo.svg';
-import notionIcon from '@/assets/images/notion-logo.svg';
-import slackIcon from '@/assets/images/slack-logo.svg';
 import IntegrationColumn from "@/components/Services";
 
 
@@ -9,9 +6,9 @@ import IntegrationColumn from "@/components/Services";
 
 
 const integrations = [
-    { name: "Ventakesh D. Raju ", icon: figmaIcon, description: "Figma is a collaborative interface design tool." },
-    { name: "Sumit Sharma", icon: notionIcon, description: "Notion is an all-in-one workspace for notes and docs." },
-    { name: "Peter R. Gomez", icon: slackIcon, description: "Slack is a powerful team communication platform." },
+    { name: "Ventakesh D. Raju ", description: "He is an experienced Marine Engineer with extensive global exposure.He has worked on diverse vessels, specializing in marine machinery and engineering operations.Known for his technical expertise and reliability, he ensures smooth and efficient ship performance." },
+    { name: "Sumit Sharma",  description: "He is a seasoned Merchant Navy professional with over 20 years of experience.He has led maritime operations across commercial vessels, focusing on navigation and crew management.Known for his leadership and expertise, he upholds the highest standards in global shipping." },
+    { name: "Peter R. Gomez", description: "He is an international expert in maritime affairs with a strong global footprint.He has collaborated with leading maritime companies across the world.His expertise spans policy, operations, and strategic maritime development." },
 ];
 export type IntegrationsType = typeof integrations;
 

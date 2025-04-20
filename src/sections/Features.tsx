@@ -1,12 +1,11 @@
 import Tag from "@/components/Tag";
-import FeatureCard from "@/components/FeatureCard"
-import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg"
-import avatar2 from "@/assets/images/avatar-lula-meyers.jpg"
-import avatar3 from "@/assets/images/avatar-florence-shaw.jpg"
-import avatar4 from "@/assets/images/avatar-owen-garcia.jpg"
+import FeatureCard from "@/components/FeatureCard";
 import Image from "next/image";
-import Avatar from "@/components/Avatar";
-import Key from "@/components/Key";
+
+// Sample image URLs for the cards
+import image1 from '@/assets/images/container1.jpg';  // Change this with the actual image path
+import image2 from '@/assets/images/container2.jpg';  // Change this with the actual image path
+import image3 from '@/assets/images/container3.jpg';  // Change this with the actual image path
 
 const features = [
   "AI logistics",
@@ -31,56 +30,43 @@ export default function Features() {
           Where power meets <span className="text-sky-800">Simplicity</span>
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8">
+          {/* First FeatureCard */}
           <FeatureCard
-            title="Real-time Collaboration"
-            description="Work together seamlessly with conflict-free consulting."
-            className="md:col-span-2 lg:col-span-1 group"
+            title="AI & Technology driven Maritime solutions"
+            description="AI & technology-driven maritime solutions leverage automation, data analytics, and smart systems to optimize operations at sea.
+            These innovations enhance safety, efficiency, and decision-making across the shipping and logistics industry."
+            className="md:col-span-2 lg:col-span-1 group text-center"
           >
             <div className="aspect-video flex items-center justify-center">
-              <Avatar className="z-40">
-                <Image src={avatar1} alt="avatar1" className="rounded-full"/>
-              </Avatar>
-              <Avatar className="-ml-6 border-indigo-500 z-30">
-                <Image src={avatar2} alt="avatar2" className="rounded-full"/>
-              </Avatar>
-              <Avatar className="-ml-6 border-amber-500 z-20">
-                <Image src={avatar3} alt="avatar3" className="rounded-full"/>
-              </Avatar>
-              <Avatar className="-ml-6 border-transparent group-hover:border-sky-400 transition">
-                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
-                  <Image src={avatar4} alt="Avatar 4" className="absolute size-full rounded-full opacity-0 group-hover:opacity-100 transition"/>
-                  {Array.from({length:3}).map((_, i) =>(
-                    <span className="size-1.5 rounded-full bg-white inline-flex" key={i}></span>
-                  ))}
-                </div>
-              </Avatar>
+              <Image src={image1} alt="AI & Technology" className="w-full h-full object-cover rounded-lg" />
             </div>
           </FeatureCard>
+
+          {/* Second FeatureCard */}
           <FeatureCard
-            title="Interactive Consultancy"
-            description="Engage with intuitive tools designed for maritime ops."
-            className="md:col-span-2 lg:col-span-1"
+            title="Finding Sustainable & Green solutions for Ports by efficient recycling"
+            description="Focused on creating sustainable, eco-friendly port operations through efficient waste management and recycling practices.
+            These solutions aim to reduce environmental impact while promoting greener maritime infrastructure."
+            className="md:col-span-2 lg:col-span-1 text-center"
           >
             <div className="aspect-video flex items-center justify-center">
-              <p className="text-4xl font-extrabold text-black/30 text-center">
-                We&apos;ve achieved{" "} <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">incredible growth</span> this year
-                </p>
+            <Image src={image2} alt="AI & Technology" className="w-full h-full object-cover rounded-lg" />
             </div>
           </FeatureCard>
+
+          {/* Third FeatureCard */}
           <FeatureCard
-            title="Real-time Solutions"
-            description="Instant insights and actions when you need them most."
-            className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto group"
+            title="Research driven innovative solutions for Shipping manufacturers"
+            description="Research-driven innovative solutions for shipping manufacturing focus on developing advanced technologies to enhance vessel design and performance.
+            These solutions aim to improve efficiency, sustainability, and cost-effectiveness in the global shipping industry."
+            className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto text-center group"
           >
             <div className="aspect-video flex items-center justify-center gap-4">
-              <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-sky-400 transition-all duration-500 group-hover:translate-y-1">Quality</Key>
-              <Key className=" outline outline-2 outline-offset-4 outline-transparent group-hover:outline-sky-400 transition-all duration-1000 group-hover:translate-y-1">+</Key>
-              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-sky-400 transition-all duration-1000 group-hover:translate-y-1">Ethic</Key>
+            <Image src={image3} alt="AI & Technology" className="w-full h-full object-cover rounded-lg" />
             </div>
           </FeatureCard>
         </div>
 
-     
         <div className="mt-8 flex flex-wrap gap-3 justify-center">
           {features.map((feature) => (
             <div
@@ -96,4 +82,3 @@ export default function Features() {
     </section>
   );
 }
-

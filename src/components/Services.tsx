@@ -1,7 +1,6 @@
 "use client";
 
 import { type IntegrationsType } from "@/sections/Integrations"
-import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import {motion} from 'framer-motion'
 import { Fragment } from "react";
@@ -28,8 +27,7 @@ export default function IntegrationColumn(props:{integrations:IntegrationsType;c
                     {integrations.map(integration =>(
                             <div key={integration.name} className="bg-gray-300 border border-black/10 rounded-3xl p-6">
                                 <div className="flex justify-center">
-                                    <Image src={integration.icon} alt={`${integration.name} icon`}
-                                    className="size-24"/>
+                                   
                                 </div>
                                 <h3 className="text-3xl text-center mt-6 ">{integration.name}</h3>
                                 <p className="text-center text-black/50 mt-2">{integration.description}</p>
